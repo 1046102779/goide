@@ -29,6 +29,7 @@ sudo vim /etc/profile
 export GOROOT="/data/env/golang/default"
 export PATH = "$PATH:$GOROOT/bin"
 *****************************************
+sudo source /etc/profile
 
 ## 切到自己的账户环境下
 cd ~
