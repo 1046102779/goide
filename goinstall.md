@@ -116,3 +116,11 @@ git clone https://github.com/golang/tools
 
 安装后，写go代码，截图如下：
 ![hello,world](https://github.com/1046102779/goide/blob/master/2.pic.jpg)
+
+## 参考文献
+1. [vim-go](https://github.com/fatih/vim-go)
+2. [tools](https://github.com/golang/tools)
+3. [所需即所获IDE](https://github.com/yangyangwithgnu/use_vim_as_ide)
+4. [vim](https://github.com/vim/vim)
+5. [配置 VIM 的 Go 语言开发环境](https://github.com/Unknwon/wuwen.org/issues/7)
+6. [vim与IDE的比较](https://www.zhihu.com/question/19870551)
