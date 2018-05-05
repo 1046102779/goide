@@ -127,3 +127,4 @@ git clone https://github.com/golang/tools
 4. [vim](https://github.com/vim/vim)
 5. [配置 VIM 的 Go 语言开发环境](https://github.com/Unknwon/wuwen.org/issues/7)
 6. [vim与IDE的比较](https://www.zhihu.com/question/19870551)
+7. [vim添加python支持](https://blog.csdn.net/u012587734/article/details/78572355)
