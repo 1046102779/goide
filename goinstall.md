@@ -57,10 +57,12 @@ cd vim
 ## 此处有坑，一般有些开发者没有指定各个参数的默认值，其实很多参数默认值是no
 ## python的配置config指定位置正确
 ## 支持python、lua、ruby和perl插件编写
+## 注意点：这里的`--with-python-config-dir=`值表示vim需要支持的python版本，需要使用python3.所以必须先安装python3版本
 ./configure --with-features=huge --enable-pythoninterp=yes --enable-rubyinterp=yes --enable-luainterp=yes --enable-perlinterp=yes --with-python-config-dir=/usr/lib/python2.7/config/ --enable-gui=gtk2 --enable-cscope --prefix=/usr  
 ## 一般make或者make install不要这样使用`make && make install`
 ## make 完成后，用`echo $?`命令校验下，返回值：0，表示成功。make install也是一样
 sudo make
+## 下面的命令，可能会报错：vim二进制文件就在vim/src/vim文件。可以sudo mv src/vim /usr/local/bin/vim
 sudo make install
 ```
 
@@ -108,7 +110,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 ## 因为要安装go的集成开发环境，所以你会在这里遇到被墙的问题，好在google公司把这些包放在的github上，牛逼轰轰
 cd ~/godev/src/
-make -P golang.org/x
+mkdir -P golang.org/x
 git clone https://github.com/golang/tools
 
 ## vim-go的插件安装, 安装完成后，你的vim基本就ok了
