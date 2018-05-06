@@ -113,6 +113,10 @@ cd ~/godev/src/
 mkdir -P golang.org/x
 git clone https://github.com/golang/tools
 
+## 安装YouCompleteMe的补全风格C family
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+
 ## vim-go的插件安装, 安装完成后，你的vim基本就ok了
 :GoInstallBinaries
 ```
