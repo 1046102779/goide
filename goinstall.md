@@ -111,6 +111,7 @@ Plugin 'altercation/vim-colors-solarized'
 ## 因为要安装go的集成开发环境，所以你会在这里遇到被墙的问题，好在google公司把这些包放在的github上，牛逼轰轰
 cd ~/godev/src/
 mkdir -P golang.org/x
+cd $GOPATH/src/golang.org/x
 git clone https://github.com/golang/tools
 
 ## 安装YouCompleteMe的补全风格C family
